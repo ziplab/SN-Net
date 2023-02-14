@@ -1,3 +1,3 @@
-# Stitchable-Neural-Networks
+# Stitchable Neural Networks
 
 Soon...
