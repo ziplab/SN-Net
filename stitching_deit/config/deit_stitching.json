@@ -1,0 +1,22 @@
+{
+  "model": "snnet",
+  "anchors": ["deit_tiny_patch16_224", "deit_small_patch16_224", "deit_base_patch16_224"],
+  "batch_size": 128,
+  "data_path": "/home/datasets/imagenet",
+  "data_set": "IMNET",
+  "exp_name": "stitch_deit_ti_s_b",
+  "input_size": 224,
+  "num_workers": 10,
+  "lr": 5e-5,
+  "warmup_lr": 1e-7,
+  "min_lr": 1e-6,
+  "epochs": 50,
+  "fulltune": true,
+  "ls_init": true,
+  "nearest_stitching": true,
+  "stitch_stride": 1,
+  "stitch_kernel_size": 2,
+  "stitch_init_bs": 100,
+  "distillation_type": "hard",
+  "teacher_model": "regnety_160"
+}

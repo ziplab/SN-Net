@@ -2,6 +2,12 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.idea/*
+# launch bash
+
+# nsight system report files
+*.nsys-rep
+*.sqlite
 
 # C extensions
 *.so
@@ -50,7 +56,7 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
-.idea/
+
 # Translations
 *.mo
 *.pot
@@ -127,3 +133,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+output/*
+*.pth

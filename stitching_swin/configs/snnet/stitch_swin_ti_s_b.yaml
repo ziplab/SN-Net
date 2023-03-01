@@ -1,0 +1,18 @@
+MODEL:
+  TYPE: snnet
+  NAME: stitch_swin_ti_s_b
+  DROP_PATH_RATE: 0.2
+  WEIGHTS: ['pretrained/swin_tiny_patch4_window7_224_22kto1k_finetune.pth',
+            'pretrained/swin_small_patch4_window7_224_22kto1k_finetune.pth',
+            'pretrained/swin_base_patch4_window7_224_22kto1k.pth']
+TRAIN:
+  EPOCHS: 50
+  WARMUP_EPOCHS: 5
+  STITCH_LR_SCALE: 1.0
+  BASE_LR_SCALE: 0.1
+DATA:
+  NUM_WORKERS: 10
+  BATCH_SIZE: 16
+  DATA_PATH: /home/datasets/imagenet
+  DATASET: imagenet
+TEACHER_MODEL: regnety_160

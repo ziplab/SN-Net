@@ -1,0 +1,1 @@
+place your pretrained swin checkpoints here
