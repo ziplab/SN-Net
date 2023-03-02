@@ -12,7 +12,7 @@ TRAIN:
   BASE_LR_SCALE: 0.1
 DATA:
   NUM_WORKERS: 10
-  BATCH_SIZE: 16
+  BATCH_SIZE: 128
   DATA_PATH: /home/datasets/imagenet
   DATASET: imagenet
 TEACHER_MODEL: regnety_160

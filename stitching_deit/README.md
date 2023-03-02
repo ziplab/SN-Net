@@ -44,13 +44,15 @@ Make sure you update the ImageNet path in `config/deit_stitching.json`. By defau
 
 ## Evaluation
 
+You can download our trained weights from [here](https://github.com/ziplab/SN-Net/releases/download/v1.0/snnet_deit.pth). Next,
+
 
 ```bash
 python -m torch.distributed.launch --nproc_per_node=8 \
       --master_port 1234 \
       --use_env main.py \
       --config config/deit_stitching.json \
-      --dist-eval --eval
+      --dist-eval --eval --resume [path/to/snnet_deit.pth]
 ```
 
 After evaluation, you can find a `stitches_res.txt` under the `outputs/` directory which contains the results for all stitches.
