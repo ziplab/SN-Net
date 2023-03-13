@@ -43,7 +43,7 @@ For Swin-based experiments, please refer to [stitching_swin](./stitching_swin).
 If you use SN-Net in your research, please consider the following BibTeX entry and giving us a star🌟!
 
 ```BibTeX
-@inproceedings{pan2023snnet
+@inproceedings{pan2023snnet,
   title={Stitchable Neural Networks},
   author={Pan, Zizheng and Cai, Jianfei and Zhuang, Bohan},
   booktitle={CVPR},
