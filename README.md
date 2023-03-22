@@ -1,4 +1,4 @@
-# Stitchable Neural Networks 🪡 (CVPR 2023)
+# Stitchable Neural Networks 🪡 (CVPR 2023 Highlight)
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) 
 <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>
@@ -13,6 +13,7 @@ By [Zizheng Pan](https://scholar.google.com.au/citations?user=w_VMopoAAAAJ&hl=en
 
 ## News
 
+- 22/03/2023. SN-Net was selected as a highlight at CVPR 2023!🔥
 - 02/03/2023. We release the source code! Any issues are welcomed!
 - 28/02/2023. SN-Net was accepted by CVPR 2023! 🎉🎉🎉
 
