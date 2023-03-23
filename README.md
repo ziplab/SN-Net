@@ -37,6 +37,23 @@ For DeiT-based experiments, please refer to [stitching_deit](./stitching_deit).
 
 For Swin-based experiments, please refer to [stitching_swin](./stitching_swin).
 
+## Best Practice for Extension
+
+Please feel free to extend SN-Net into other model familiy. The following tips may help your experiments.
+
+### For Better Stitching
+
+1. For paired stitching (equal depth) such as on plain ViTs, using a small sliding window for stitching usually achieves a smoother performance curve.
+2. For unpaired stitching (unequal depth) such as on hierarchical ViTs, split the architecture into different stages and stitch within the same stage.
+3. Note that many existing models allocate most blocks/layers into the 3rd stage, thus stitching at the 3rd stage can help to obtain more stitches. 
+4. Remember to initialize your stitching layers. A few samples can be enough.
+
+
+### For Better Training
+
+1. Uniformly decreasing the learning rate (the training time LR) by 10x can serve as a good starting point. See our settings in DeiT-based experiments.
+2. If the above is not good, try to decrease the learning rate for anchors while using a relatively larger learning rate for stitching layers. See our Swin-based experiments.
+3. Training with more epochs (e.g., 100) can be better, but it also comes at a higher computational cost.
 
 
 ## Citation
