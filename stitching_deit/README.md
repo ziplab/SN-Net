@@ -57,18 +57,37 @@ python -m torch.distributed.launch --nproc_per_node=8 \
 
 After evaluation, you can find a `stitches_res.txt` under the `outputs/` directory which contains the results for all stitches.
 
+## Selective Inference
+
+One advantage of SN-Net is that it can instantly switch network topology at runtime after training. For example,
+
+```python
+import torch
+
+x = torch.randn(224, 224, 3)
+
+# testing with stitch id 24
+model.reset_stitch_id(24)
+out = model(x)
+# FLOPs = 2.76G, ImageNet-1K Top-1 acc = 75.63%
+
+# testing with stitch id 56
+model.reset_stitch_id(56)
+out = model(x)
+# FLOPs = 10.05G, ImageNet-1K Top-1 acc = 81.25%
+```
 
 
 ## Hyperparameters in SN-Net
 
 Feel free to tune the hyperparameters in SN-Net. For example,
 
-- **fulltune**: fully finetune the anchors and the stitching layers, otherwise the anchors are freezed.
-- **ls_init**: initialize the stitching layers by the least squares method.
-- **nearest_stitching**:  limit a stitch to connect with a pair of anchors that have the nearest model complexity/performance.
-- **stitch_stride**: sliding window stride for stitching.
-- **stitch_kernel_size**: sliding window size for stitching.
-- **stitch_init_bs**: the number of samples for initializing the stitching layers.
+- `fulltune`: fully finetune the anchors and the stitching layers, otherwise the anchors are freezed.
+- `ls_init`: initialize the stitching layers by the least squares method.
+- `nearest_stitching`:  limit a stitch to connect with a pair of anchors that have the nearest model complexity/performance.
+- `stitch_stride`: sliding window stride for stitching.
+- `stitch_kernel_size`: sliding window size for stitching.
+- `stitch_init_bs`: the number of samples for initializing the stitching layers.
 
 A concrete example is shown in `config/deit_stitching.json`, where it contains our default setting.
 

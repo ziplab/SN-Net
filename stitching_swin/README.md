@@ -58,6 +58,26 @@ python -m torch.distributed.launch --nproc_per_node 8 \
 After evaluation, you can find a `stitches_res.txt` under the `outputs/[name]/default/` directory which contains the results for all stitches.
 
 
+## Selective Inference
+
+One advantage of SN-Net is that it can instantly switch network topology at runtime after training. For example,
+
+```python
+import torch
+
+x = torch.randn(224, 224, 3)
+
+# testing with stitch id 13
+model.reset_stitch_id(13)
+out = model(x)
+# FLOPs = 7.38G, ImageNet-1K Top-1 acc = 82.93%
+
+# testing with stitch id 28
+model.reset_stitch_id(28)
+out = model(x)
+# FLOPs = 12.94G, ImageNet-1K Top-1 acc = 84.13%
+```
+
 
 ## Results
 
