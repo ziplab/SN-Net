@@ -53,10 +53,10 @@ To stitch a ResNet-18 with Swin-Ti with 8 GPUs on ImageNet.
 
 Download our trained wegihts
 
-| Stitched Models      | Checkpoint |
-| -------------------- |------------|
-| ResNet-18, ResNet-50 | link       |
-| ResNet-18, Swin-Ti   | link       |
+| Stitched Models      | Checkpoint                                                   |
+| -------------------- | ------------------------------------------------------------ |
+| ResNet-18, ResNet-50 | [link](https://github.com/ziplab/SN-Net/releases/download/v1.1/resnet_18_50.pth) |
+| ResNet-18, Swin-Ti   | [link](https://github.com/ziplab/SN-Net/releases/download/v1.1/resnet18_swin_ti.pth) |
 
 
 
