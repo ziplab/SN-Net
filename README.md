@@ -13,6 +13,7 @@ By [Zizheng Pan](https://scholar.google.com.au/citations?user=w_VMopoAAAAJ&hl=en
 
 ## News
 
+- 27/03/2023. We release the code and checkpoints for stitching ResNets and Swin Transformers.
 - 22/03/2023. SN-Net was selected as a highlight at CVPR 2023!🔥
 - 02/03/2023. We release the source code! Any issues are welcomed!
 - 28/02/2023. SN-Net was accepted by CVPR 2023! 🎉🎉🎉
@@ -36,6 +37,9 @@ SN-Net is a general framework. However, as different model families are trained 
 For DeiT-based experiments, please refer to [stitching_deit](./stitching_deit).
 
 For Swin-based experiments, please refer to [stitching_swin](./stitching_swin).
+
+For experiments with ResNets and Swins, please refer to [stitching_resnet_swin](./stitching_resnet_swin).
+
 
 ## Best Practice for Extension
 

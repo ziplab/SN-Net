@@ -1,0 +1,3 @@
+{
+  "anchors": ["resnet18", "swin_tiny_patch4_window7_224"]
+}
