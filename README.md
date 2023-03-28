@@ -13,6 +13,7 @@ By [Zizheng Pan](https://scholar.google.com.au/citations?user=w_VMopoAAAAJ&hl=en
 
 ## News
 
+- 28/03/2023. Code for stitching LeViTs has been released. 
 - 27/03/2023. We release the code and checkpoints for stitching ResNets and Swin Transformers.
 - 22/03/2023. SN-Net was selected as a highlight at CVPR 2023!🔥
 - 02/03/2023. We release the source code! Any issues are welcomed!
