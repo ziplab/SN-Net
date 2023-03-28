@@ -34,6 +34,17 @@ With only a few epochs of training, SN-Net effectively interpolates between the 
 
 SN-Net is a general framework. However, as different model families are trained differently, we use their own code for stitching experiments. In this repo, we provide examples for plain ViTs and hierarchical ViTs by stitching DeiT and Swin, respectively.
 
+To use our repo, we suggest creating a Python virtual environment.
+
+```bash
+conda create -n snnet python=3.9
+pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
+pip install fvcore
+pip install timm==0.6.12
+```
+
+Next, you can feel free to experiment with different settings.
+
 For DeiT-based experiments, please refer to [stitching_deit](./stitching_deit).
 
 For Swin-based experiments, please refer to [stitching_swin](./stitching_swin).

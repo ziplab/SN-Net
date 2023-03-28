@@ -110,3 +110,4 @@ output/
 Untitled.ipynb
 Testing notebook.ipynb
 output/*
+logs/*

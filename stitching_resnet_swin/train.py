@@ -877,8 +877,6 @@ def main():
         _logger.info(
             f'Scheduled epochs: {num_epochs}. LR stepped per {"epoch" if lr_scheduler.t_in_epochs else "update"}.')
 
-    with open('resnet_swin_args_training.json', 'w') as f:
-        json.dump(vars(args), f, indent=4)
 
     try:
         for epoch in range(start_epoch, num_epochs):
