@@ -39,7 +39,7 @@ python -m torch.distributed.launch --nproc_per_node=8 --use_env main.py --model 
 
 ## Evaluation
 
-You can download our trained weights from [here](). Next,
+You can download our trained weights from [here](https://github.com/ziplab/SN-Net/releases/download/v1.2/levit_192_256_release.pth). Next,
 
 ```bash
 python -m torch.distributed.launch --nproc_per_node=1 --use_env main.py --model stitch_levits \
