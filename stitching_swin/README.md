@@ -7,8 +7,8 @@ This directory contains the training and evaluation scripts for stitching Swins.
 ## Requirements
 
 ### Prepare Python Environment
-* PyTorch 1.10.1
-* CUDA 11.1
+* PyTorch 1.10.1+
+* CUDA 11.1+
 * timm 0.6.12
 * fvcore 0.1.5
 

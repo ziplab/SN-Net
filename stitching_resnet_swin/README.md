@@ -6,8 +6,8 @@ This directory contains the training and evaluation scripts for stitching ResNet
 
 ## Requirements
 
-* PyTorch 1.10.1
-* CUDA 11.1
+* PyTorch 1.10.1+
+* CUDA 11.1+
 * fvcore 0.1.5
 
 
